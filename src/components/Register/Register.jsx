@@ -120,9 +120,11 @@ const Register = () => {
         </div>
         <p className="text-center">OR</p>
       </form>
-      <button onClick={handleGoogleLoginSubmit} className="btn bg-green-500 -mt-6 text-lg my-4">
-        Continue With Google
-      </button>
+      <div className="mx-auto">
+        <button onClick={handleGoogleLoginSubmit} className="btn bg-green-500 -mt-6 text-lg my-4">
+          Continue With Google
+        </button>
+      </div>
       <p className="text-center mb-4">
         If you have an account Please{" "}
         <NavLink to={"/login"}>

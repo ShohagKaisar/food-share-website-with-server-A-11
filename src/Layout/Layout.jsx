@@ -9,18 +9,19 @@ const Layout = () => {
     <div className='container mx-auto px-2'>
       {/* Navbar Section */}
       <nav>
-      <Navbar></Navbar>
+        <Navbar></Navbar>
       </nav>
+      <div className='mt-[105px]'>
+        {/* Main Section */}
+        <main>
+          <Outlet></Outlet>
+        </main>
 
-      {/* Main Section */}
-      <main>
-      <Outlet></Outlet>
-      </main>
-
-      {/* Footer Section */}
-      <footer>
-      <Footer></Footer>
-      </footer>
+        {/* Footer Section */}
+        <footer>
+          <Footer></Footer>
+        </footer>
+      </div>
     </div>
   );
 }

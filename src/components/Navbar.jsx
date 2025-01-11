@@ -33,26 +33,26 @@ const Navbar = () => {
         </NavLink>
       </li>
       <li>
-        <NavLink to={"/addfood"} className="hover:text-yellow-400 transition duration-300">
+        {user && <NavLink to={"/addfood"} className="hover:text-yellow-400 transition duration-300">
           Add Food
-        </NavLink>
+        </NavLink>}
       </li>
       <li>
-        <NavLink to={"/managefood"} className="hover:text-yellow-400 transition duration-300">
+        {user && <NavLink to={"/managefood"} className="hover:text-yellow-400 transition duration-300">
           Manage My Food
-        </NavLink>
+        </NavLink>}
       </li>
       <li>
-        <NavLink to={"/myfoodrequest"} className="hover:text-yellow-400 transition duration-300">
+        {user && <NavLink to={"/myfoodrequest"} className="hover:text-yellow-400 transition duration-300">
           My Food Request
-        </NavLink>
+        </NavLink>}
       </li>
     </>
   );
 
   return (
     <div>
-      <div className="navbar bg-gradient-to-r from-purple-600 via-red-500 to-yellow-400 text-white shadow-lg py-4">
+      <div className="fixed top-0 navbar w-[97.5%] md:w-[95%] z-50 bg-gradient-to-r from-purple-600 via-red-500 to-yellow-400 text-white shadow-lg py-4">
         {/* Navbar Start */}
         <div className="navbar-start">
           <div className="dropdown">

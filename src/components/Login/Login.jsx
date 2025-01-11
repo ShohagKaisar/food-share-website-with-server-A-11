@@ -29,7 +29,7 @@ const Login = () => {
       })
   }
 
-// Handle Login Function
+  // Handle Login Function
   const handleGoogleLoginSubmit = () => {
     handleGoogleLogin().then(() => {
       Swal.fire({
@@ -64,7 +64,9 @@ const Login = () => {
         </div>
         <p className='text-center'>OR</p>
       </form>
-      <button onClick={handleGoogleLoginSubmit} className="btn bg-green-500 -mt-6 text-lg">Continue With Google</button>
+      <div className='mx-auto'>
+        <button onClick={handleGoogleLoginSubmit} className="btn bg-green-500 -mt-6 text-lg">Continue With Google</button>
+      </div>
       <div className='my-4'>
         <p className="text-center mb-2">If you don't have an account. Please <NavLink to={"/register"}><span className="text-blue-600">Register</span></NavLink></p>
       </div>

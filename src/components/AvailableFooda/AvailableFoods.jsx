@@ -64,7 +64,7 @@ const AvailableFoods = () => {
 
       {/* Food items */}
       <div
-        className={`grid gap-4 mt-8 ${threeColum ? "md:grid-cols-3" : "md:grid-cols-2"
+        className={`grid gap-4 mt-8 ${threeColum ? "md:grid-cols-3" : "md:grid-cols-2 px-32"
           } grid-cols-1`}
       >
         {searchedData.map((item) => (
